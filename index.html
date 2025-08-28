@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript & DOM Manipulation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <p>YouTube Subscribe Button</p>
+    <button onclick="
+        subscribe();
+    " class="sub-btn subscribe-btn">Subscribe</button>
+   
+
+    <p>Delivery Cost Calculator</p>
+    <input placeholder="cost of your delivery" class="js-cost-input cost-input" onkeydown="handleCostKeydown()">
+    <button onclick="
+        calculateTotal();
+    " class="calculate-btn">Calculate</button>
+    <p class="js-total-cost"></p>
+    <p class="js-error-message" style="color:red"></p>
+
+    <script src="./script.js"></script>
+</body>
+</html>
